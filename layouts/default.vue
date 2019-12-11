@@ -1,8 +1,44 @@
 <template>
   <div>
+    <nav class="db w-100 pa3 ph5-l flex justify-between items-center-ns">
+      <div class="db v-mid w-auto mb2 mb0-l">
+        <logo class="v-mid" />
+
+        <a
+          class="v-mid link dim tc f5 f4-ns fw6 black-70"
+          href="https://qiita.com/advent-calendar/2019/nuxt-js"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nuxt.js Advent Calendar 2019 for Qiita
+        </a>
+      </div>
+
+      <div class="db v-mid w-auto">
+        <a
+          class="link f6 fw6 hover-blue black-70"
+          href="https://tachyons.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Made with Tachyons
+        </a>
+      </div>
+    </nav>
+
     <nuxt />
   </div>
 </template>
+
+<script>
+import Logo from '~/components/Logo.vue'
+
+export default {
+  components: {
+    Logo
+  }
+}
+</script>
 
 <style>
 html {
@@ -22,34 +58,5 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
 }
 </style>
